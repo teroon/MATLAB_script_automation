@@ -1,0 +1,17 @@
+A=input('the matrix A');
+B=input('the matrix B');
+C=input('the matrix C');
+[V,D]=eig(A);
+P=V;
+Pinv=inv(P);
+A1=Pinv*A*P;
+B1=Pinv*B;
+C1=C*P;
+disp('A1(ÌØÕ÷Öµ)');
+disp(A1);
+disp('B1');
+disp(B1);
+disp('C1');
+disp(C1);
+disp('P');
+disp(P);
